@@ -1,0 +1,2 @@
+# contentdo.ru
+bootstrap version
