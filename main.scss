@@ -1,0 +1,42 @@
+
+
+$primary: #6f42c1;
+$secondary: gray;
+
+
+
+body {
+    background-color:#6f42c1;
+    color: black;
+    font-family: Arial;
+    text-align: center;
+}
+
+#text1 {
+    color:#6f42c1;
+    border: 1px solid black ;
+    border-radius: 10px;
+    resize: none;
+    box-shadow: 5px 5px 5px black;
+    
+}
+
+#text2 {
+    color:#6f42c1;
+    border: 1px solid black;
+    border-radius: 10px;
+    resize: none;
+    box-shadow: 5px 5px 5px black;
+}
+
+h1 {
+    text-align: center;
+}
+
+
+
+@import "node_modules/bootstrap/scss/bootstrap";
+
+:root {
+    --bs-body-bg:#343a40;
+}

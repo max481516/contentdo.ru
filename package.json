@@ -1,0 +1,23 @@
+{
+  "name": "contentdo.ru",
+  "version": "1.0.0",
+  "description": "bootstrap version hi",
+  "main": "index.js",
+  "scripts": {
+    "compile": "sass --watch --no-source-map main.scss styles.css "
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/max481516/contentdo.ru.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/max481516/contentdo.ru/issues"
+  },
+  "homepage": "https://github.com/max481516/contentdo.ru#readme",
+  "dependencies": {
+    "bootstrap": "^5.2.3",
+    "sass": "^1.60.0"
+  }
+}
