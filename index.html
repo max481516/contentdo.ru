@@ -9,9 +9,9 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500;600;700;800&family=Russo+One&family=Wallpoet&display=swap" rel="stylesheet">
 
-    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="styles.css">
 
-    <script src="script.js" defer></script>
+    <script src="index.js" defer type="module"></script>
 
     <title>ContentDo - Видеоконтент под ключ</title>
 </head>
@@ -19,18 +19,18 @@
     <header class="header">
         <nav class="nav">
             <div class="nav__content">
-                <a href="#" class="logo">
+                <a href="index.html" class="logo">
                 <img class="logo__img" src="media/logo.svg" alt="logo" height="70px" width="300px">
                 </a>
                 <ul class="nav__list">
                     <li class="nav__item">
-                        <a class="nav__link" href="#">История</a>
+                        <a class="nav__link" href="#story">О нас</a>
                     </li>
                     <li class="nav__item">
-                        <a class="nav__link" href="#">Портфолио</a>
+                        <a class="nav__link" href="#price">Стоимость</a>
                     </li>
                     <li class="nav__item">
-                        <a class="nav__contacts" href="#">Контакты</a>
+                        <a class="nav__link nav__link--mod" href="#">Контакты</a>
                     </li>
                 </ul>
             </div>
@@ -44,40 +44,43 @@
     
     <main>
         <section class="intro">
-            <h1 class="intro__title">ContentDo  - делаем контент!</h1>
-            <p>Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est.Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est.Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est.Nemo en</p>
+            <h1 class="intro__title fade-in-title">ContentDo  - делаем контент!</h1>
+            <p class="fade-in-p">Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est.Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est.Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est.Nemo en</p>
         </section>
         
-        <section class="portfolio">
+        <section class="portfolio" id="portfolio">
             <h2 class="portfolio__title">Наши проекты</h2>
             <div class="portfolio__project1">
-                <div class="description">
+                <div class="description description--left">
                     <h2>Lorem ipsum dolor</h2>
                     <p>Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est.</p>
                 </div>
-                <video class="video1" autoplay loop muted src="media/video1.MOV" loading="lazy"></video>
+                <video class="video video1" src="media/video1.MOV"></video>
+                <div class="video video1 video-control1">▶</div>
             </div>
     
             <div class="portfolio__project2">
-                <video class="video2" controls src="media/video2.MP4" loading="lazy"></video>
-                <div class="description">
+                <video class="video video2" src="media/video2.MP4"></video>
+                <div class="video video2 video-control2">▶</div>
+                <div class="description description--right">
                     <h2>Lorem ipsum dolor</h2>
                     <p>Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est.</p>
                 </div>
             </div>
     
             <div class="portfolio__project3">
-                <div class="description">
+                <div class="description description--left">
                     <h2>Lorem ipsum dolor</h2>
                     <p>Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est.</p>
                 </div>
-                <video class="video3" autoplay loop src="media/video3.MOV" loading="lazy"></video>
+                <video class="video video3" src="media/video3.MOV"></video>
+                <div class="video video3 video-control3">▶</div>
             </div>
         </section>
     
-        <section class="story">
-            <h2 class="story__title">О нас</h2>
-            <p class="story__text">Наша компания - это профессиональный видеопроизводственный продакшн, который предоставляет полный цикл услуг в создании качественных видео-контента. Мы создаем и производим мультимедийные проекты любой сложности для наших клиентов.<br/><br/>
+        <section class="story" id="story">
+            <h2 class="story__title fade-in-title">О нас</h2>
+            <p class="story__text fade-in-p">Наша компания - это профессиональный видеопроизводственный продакшн, который предоставляет полный цикл услуг в создании качественных видео-контента. Мы создаем и производим мультимедийные проекты любой сложности для наших клиентов.<br/><br/>
     
             Команда нашей компании состоит из высококвалифицированных специалистов - режиссеров, сценаристов, операторов, звукорежиссеров, монтажеров, дизайнеров и других профессионалов, обладающих богатым опытом работы в сфере видеопроизводства.<br/><br/>
             
@@ -90,17 +93,17 @@
             Мы верим, что качественное видео - это важный инструмент для любого бизнеса в нынешней цифровой эпохе. Мы стараемся создавать уникальный контент, который вызывает интерес и вдохновение. Мы готовы создать для вас презентацию полного цикла работы кино, чтобы вы смогли оценить наши профессиональные навыки в создании качественного видео-контента. Обращайтесь к нам, и мы готовы заняться реализацией вашей идеи уже сегодня.</p>
         </section>
     
-        <section class="price">
-            <h2 class="price__title">Стоимость</h2>
-            <div class="price__numbers"><span style="font-family:'Russo One', sans-serif;">От </span>₽300.000<span style="font-family:'Russo One', sans-serif;"> до </span>₽????</div>
-            <p class="price__text">Почему мы не можем сразу сказать точную стоимость? <br/>Все просто, мы подходим к каждому клиенту и заданию <br/>индивидуально, мы не делаем все по шаблонам. <br/>Стоимость зависит только от ваших пожеланий,<br/>мы можем исполнить абсолютно все что вам нужно. <br/>В финальную стоимость входят зарплаты дополнительным актерам, каскадерам, <br/>а так же аренда оборудования, площадок для съемки, реквизита, <br/>и всего остального что нужно именно для вашего проекта. <br/>Все цены обговариваются отдельно.<br/>
+        <section class="price" id="price">
+            <h2 class="price__title fade-in-title">Стоимость</h2>
+            <div class="price__numbers"><span style="font-family:'Russo One', sans-serif;">От </span>₽300.000<span style="font-family:'Russo One', sans-serif;"> до </span>₽<span class="counter">0000000</span></div>
+            <p class="price__text fade-in-p">Почему мы не можем сразу сказать точную стоимость? <br/>Все просто, мы подходим к каждому клиенту и заданию <br/>индивидуально, мы не делаем все по шаблонам. <br/>Стоимость зависит только от ваших пожеланий,<br/>мы можем исполнить абсолютно все что вам нужно. <br/>В финальную стоимость входят зарплаты дополнительным актерам, каскадерам, <br/>а так же аренда оборудования, площадок для съемки, реквизита, <br/>и всего остального что нужно именно для вашего проекта. <br/>Все цены обговариваются отдельно.<br/>
             </p>
         </section>
     
         <section class="contact">
-            <h2 class="contact__title">Связаться с нами</h2>
-            <p class="contact__text">Если у вас есть любые вопросы, или вы готовы начать с нами<br/>сотрудничество, пишете нам как можно скорее. <br/>Мы будем рады на все ответить и предоставить вам самый<br/>лучший сервис, сервис который достоин вас и вашего времени!</p>
-            <button class="contact__btn">Связаться!</button>
+            <h2 class="contact__title fade-in-title">Связаться с нами</h2>
+            <p class="contact__text fade-in-p">Если у вас есть любые вопросы, или вы готовы начать с нами<br/>сотрудничество, пишете нам как можно скорее. <br/>Мы будем рады на все ответить и предоставить вам самый<br/>лучший сервис, сервис который достоин вас и вашего времени!</p>
+            <button class="contact__btn contact__btn--mod">Связаться!</button>
             <div class="contact__modal">
                 <div class="contact__modalContent">
                     <button class="closeModal">&times;</button>
@@ -130,9 +133,9 @@
 
     <footer class="footer">
         <div class="footer__btn">
-            <button><a href="#">Проекты</a></button>
-            <button><a href="#">О нас</a></button>
-            <button><a href="#">Стоимость</a></button>
+            <button><a href="#portfolio">Проекты</a></button>
+            <button><a href="#story">О нас</a></button>
+            <button><a href="#price">Стоимость</a></button>
             <button id="footer-contacts">Контакты</button>
         </div>
         <div class="footer__social">
