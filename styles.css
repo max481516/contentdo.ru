@@ -129,6 +129,11 @@ h2 {
     visibility: hidden; /* You can also use visibility if you want to remove the element from the flow until it's visible */
 }
 
+.control-visibility {
+    opacity: 0;
+    transition: opacity 0.5s ease;
+}
+
 
 
 
@@ -232,6 +237,8 @@ h2 {
 }
 
 
+
+
 .video1, .video3 {
     max-width: 50dvw;
     position: relative;
@@ -251,9 +258,15 @@ h2 {
     background-color: rgba(0, 0, 0, 0.5);
     width: 8rem;
     height: 8rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: center;
-    align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     color: #ffffff;
     font-size: 3rem;
     font-weight: 400;
@@ -269,14 +282,25 @@ h2 {
     background-color: rgba(0, 0, 0, 0.5);
     width: 8rem;
     height: 8rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: center;
-    align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     color: #ffffff;
     font-size: 3rem;
     font-weight: 400;
     white-space: nowrap;
     line-height: 0;
+}
+
+video::-webkit-media-controls {
+    position: relative;
+    z-index: 1;
 }
 
 video::-webkit-media-controls {

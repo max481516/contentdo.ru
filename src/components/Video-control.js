@@ -1,8 +1,8 @@
-import { videosEl } from "../common.js";
 
 
 
-let i;
+
+/* let i;
 for (i = 0; i < videosEl.length; i++) {
 videosEl[i].addEventListener("click", function () {
     const controls = this.nextElementSibling;
@@ -33,34 +33,41 @@ videosEl[i].addEventListener(
     },
     false
 );
-}
+} */
 
-/* videosEl.forEach((video) => {
+import { videosEl } from "../common.js";
+
+videosEl.forEach((video) => {
     const controls = video.nextElementSibling;
-  
+
     video.addEventListener('click', () => {
-      if (controls.innerHTML === '▶') {
-        controls.innerHTML = '| |';
-        video.play();
-      } else {
-        controls.innerHTML = '▶';
-        video.pause();
-      }
+        // Toggle play/pause
+        if (controls.innerHTML === '▶') {
+            controls.innerHTML = '| |';
+            video.play();
+        } else {
+            controls.innerHTML = '▶';
+            video.pause();
+        }
     });
-  
+
     video.addEventListener('mouseout', () => {
-      if (!video.paused) {
-        controls.style.display = 'none';
-      }
+        // Hide controls if the video is playing
+        if (!video.paused) {
+            controls.classList.add('control-visibility');
+        }
     });
-  
+
     video.addEventListener('mouseover', () => {
-      controls.style.display = 'flex';
+        // Show controls
+        controls.classList.remove('control-visibility');
     });
-  
+
     video.addEventListener('ended', () => {
-      controls.style.display = 'flex';
-      controls.innerHTML = '▶';
+        // Show controls and set to play symbol when video ends
+        controls.classList.remove('control-visibility');
+        controls.innerHTML = '▶';
     });
-  }); */
+});
+
   
