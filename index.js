@@ -7,6 +7,9 @@ import './src/components/Animation-videoL.js';
 import './src/components/Animation-descriptionR.js';
 import './src/components/Animation-descriptionL.js';
 import './src/components/Video-control.js';
+import './src/components/Hamburger-menu.js';
+import './src/components/Mobile-portfolio.js';
+
 
 
 

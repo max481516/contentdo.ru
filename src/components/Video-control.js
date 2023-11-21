@@ -51,17 +51,20 @@ videosEl.forEach((video) => {
         }
     });
 
+    
     video.addEventListener('mouseout', () => {
         // Hide controls if the video is playing
         if (!video.paused) {
             controls.classList.add('control-visibility');
         }
     });
-
+    
+    
     video.addEventListener('mouseover', () => {
         // Show controls
         controls.classList.remove('control-visibility');
     });
+    
 
     video.addEventListener('ended', () => {
         // Show controls and set to play symbol when video ends

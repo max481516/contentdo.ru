@@ -13,3 +13,7 @@ export const titlesEl = document.querySelectorAll('.fade-in-title');
 export const paragraphsEl = document.querySelectorAll('.fade-in-p');
 export const contactBtnEl = document.querySelectorAll('.contact__btn--mod');
 export const counterEl = document.querySelector('.counter');
+export const mainMenuEl = document.querySelector('.nav__list');
+export const closeMenuEl = document.querySelector('.closeMenu');
+export const openMenuEl = document.querySelector('.openMenu');
+export const menu_itemsEl = document.querySelectorAll('nav .nav__list li a');

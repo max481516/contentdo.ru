@@ -22,6 +22,7 @@
                 <a href="index.html" class="logo">
                 <img class="logo__img" src="media/logo.svg" alt="logo" height="70px" width="300px">
                 </a>
+                <div class="openMenu"><img src="media/Menu.svg" height="50px" width="50px"></img></div>
                 <ul class="nav__list">
                     <li class="nav__item">
                         <a class="nav__link" href="#story">О нас</a>
@@ -32,10 +33,11 @@
                     <li class="nav__item">
                         <a class="nav__link nav__link--mod" href="#">Контакты</a>
                     </li>
+                    <div class="closeMenu"><img src="media/Close.svg" height="50px" width="50px"></img></div>
                 </ul>
             </div>
             <div class="video-container">
-            <video autoplay loop muted id="video-bg">
+            <video class="bg" autoplay loop muted id="video-bg">
                 <source src="media/video.MP4" type="video/mp4">
             </video>
             </div>
@@ -55,13 +57,17 @@
                     <h2>Lorem ipsum dolor</h2>
                     <p>Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est.</p>
                 </div>
-                <video class="video video1" src="media/video1.MOV"></video>
-                <div class="video video1 video-control1">▶</div>
+                <div class="video-container1">
+                    <video class="video video1" id="video-1" src="media/video1.MOV"></video>
+                    <div class="video video1 video-control1">▶</div>
+                </div>
             </div>
     
             <div class="portfolio__project2">
-                <video class="video video2" src="media/video2.MP4"></video>
-                <div class="video video2 video-control2">▶</div>
+                <div class="video-container2">
+                    <video class="video video2" src="media/video2.MP4"></video>
+                    <div class="video video2 video-control2">▶</div>
+                </div>
                 <div class="description description--right">
                     <h2>Lorem ipsum dolor</h2>
                     <p>Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est.</p>
@@ -73,8 +79,10 @@
                     <h2>Lorem ipsum dolor</h2>
                     <p>Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est.</p>
                 </div>
-                <video class="video video3" src="media/video3.MOV"></video>
-                <div class="video video3 video-control3">▶</div>
+                <div class="video-container3">
+                    <video class="video video3" src="media/video3.MOV"></video>
+                    <div class="video video3 video-control3">▶</div>
+                </div>
             </div>
         </section>
     
@@ -95,7 +103,7 @@
     
         <section class="price" id="price">
             <h2 class="price__title fade-in-title">Стоимость</h2>
-            <div class="price__numbers"><span style="font-family:'Russo One', sans-serif;">От </span>₽300.000<span style="font-family:'Russo One', sans-serif;"> до </span>₽<span class="counter">0000000</span></div>
+            <div class="price__numbers"><span class="from" style="font-family:'Russo One', sans-serif;">От </span><span class="price-num">₽300.000</span><span style="font-family:'Russo One', sans-serif;"> до </span><span class="counter">0000000</span></div>
             <p class="price__text fade-in-p">Почему мы не можем сразу сказать точную стоимость? <br/>Все просто, мы подходим к каждому клиенту и заданию <br/>индивидуально, мы не делаем все по шаблонам. <br/>Стоимость зависит только от ваших пожеланий,<br/>мы можем исполнить абсолютно все что вам нужно. <br/>В финальную стоимость входят зарплаты дополнительным актерам, каскадерам, <br/>а так же аренда оборудования, площадок для съемки, реквизита, <br/>и всего остального что нужно именно для вашего проекта. <br/>Все цены обговариваются отдельно.<br/>
             </p>
         </section>
