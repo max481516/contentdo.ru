@@ -35,3 +35,5 @@ const observer = new IntersectionObserver((entries) => {
 paragraphsEl.forEach(video => {
     observer.observe(video);
 });
+
+console.log(typeof(observer));

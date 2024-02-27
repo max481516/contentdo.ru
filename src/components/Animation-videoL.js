@@ -35,3 +35,4 @@ const observer = new IntersectionObserver((entries) => {
 videosLeftEl.forEach(video => {
     observer.observe(video);
 });
+

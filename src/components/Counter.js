@@ -11,7 +11,7 @@ const updateCounter = () => {
             requestAnimationFrame(animateCounter);
         } else {
             // When the counter reaches a million, replace with question marks
-            counterEl.textContent = '₽???????';
+            counterEl.textContent = '???????';
         }
     };
 

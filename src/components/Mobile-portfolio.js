@@ -1,4 +1,4 @@
-function toggleElementVisibility() {
+/* function toggleElementVisibility() {
     // Get viewport dimensions
     const viewportWidth = window.innerWidth;
 
@@ -20,4 +20,4 @@ function toggleElementVisibility() {
 
 // Call the function initially and listen for window resize events
 toggleElementVisibility();
-window.addEventListener('resize', toggleElementVisibility);
+window.addEventListener('resize', toggleElementVisibility); */
