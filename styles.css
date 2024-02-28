@@ -341,10 +341,12 @@ video::-webkit-media-controls {
 }
 
 .price__numbers {
+  display: flex;
+  align-items: baseline;
+  justify-content: center;
   font-size: calc(48rem / 16);
   font-family: Wallpoet;
   padding: 30px;
-  margin-right: 150px;
   animation: fade-in 6s;
 }
 
@@ -438,7 +440,8 @@ video::-webkit-media-controls {
   position: relative;
 }
 
-.contact__modalContent p {
+.contact__modalContent p,
+h3 {
   color: black;
   font-size: cacl(22rem / 16);
   margin-bottom: cacl(30rem / 16);
@@ -453,22 +456,11 @@ video::-webkit-media-controls {
 
 .closeModal {
   all: unset;
-  color: lightgray;
   font-size: calc(30rem / 16);
   cursor: pointer;
-  position: relative;
-  top: -10;
-  right: 1;
-}
-
-.closeModal:hover {
-  color: lightgray;
-  transition: 0.2s all;
-}
-
-.closeModal:active {
-  color: darkgray;
-  transition: 0.2s all;
+  position: absolute;
+  top: -44px;
+  right: -16px;
 }
 
 .modal__btns > *:hover {
@@ -570,6 +562,10 @@ video::-webkit-media-controls {
   #video-bg {
     object-fit: cover;
     height: 100dvh;
+  }
+
+  .price__numbers {
+    flex-direction: column;
   }
 
   .line {
@@ -726,3 +722,5 @@ video::-webkit-media-controls {
     width: 90%;
   }
 }
+
+/* font-family:'Russo One', sans-serif; */
